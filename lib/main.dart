@@ -81,7 +81,7 @@ class MiAppProgreso extends StatelessWidget {
             value: double.parse(porcentaje.replaceAll('%', '')) / 100,
             strokeWidth: 10,
             color: color,
-            backgroundColor: color.withOpacity(0.2),
+            backgroundColor: color.withValues(alpha: 0.2),
           ),
         ),
         Text(porcentaje, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
